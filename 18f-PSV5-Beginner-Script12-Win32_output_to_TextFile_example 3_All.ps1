@@ -6,7 +6,7 @@
 #It has been running for over 40 mins!!
 (gwmi -List *win32_*).name | Sort-Object -CaseSensitive | Out-File C:\Kruse\WMI_Win32_Alllist.txt
 $wmi_ALLlist = get-content C:\Kruse\WMI_Win32_Alllist.txt
-Thanks for watching <@:)
+
 Function Get-WMI32_ALL_Output
 {
 Foreach ($W in $WMI_ALLlist)
@@ -23,7 +23,7 @@ gwmi $w | format-list *
 
 
 
-THanks for watching <@:)
+
 
 -------------------------------end of wmi win32_$w output----------------------------------------------------------Ilovebrakes
 
